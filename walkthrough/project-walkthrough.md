@@ -59,9 +59,8 @@ The main stakeholders in this case were:
 - [`../reports/cheng-liu-final-project-report.pdf`](../reports/cheng-liu-final-project-report.pdf)
 - [`../reports/cheng-liu-final-project-erd.pdf`](../reports/cheng-liu-final-project-erd.pdf)
 
-### Course context
+### Assignment reference
 - [`../archive/final-project-instructions.pdf`](../archive/final-project-instructions.pdf)
-- [`../archive/aly6030-module-6-slide.pdf`](../archive/aly6030-module-6-slide.pdf)
 
 ## 6. Dataset Summary
 

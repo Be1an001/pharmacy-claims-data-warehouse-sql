@@ -61,7 +61,7 @@ The task was to clean that structure, build a usable star schema, and prepare sa
 - [`walkthrough/`](walkthrough/) - GitHub-friendly project explanation
 - [`outputs/`](outputs/) - query screenshots and portfolio charts
 - [`reports/`](reports/) - portfolio PDF and original report files
-- [`archive/`](archive/) - assignment and course reference files
+- [`archive/`](archive/) - assignment reference file
 
 ## Key Files
 
