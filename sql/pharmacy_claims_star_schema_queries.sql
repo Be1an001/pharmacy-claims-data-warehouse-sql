@@ -103,9 +103,10 @@ ORDER BY
     number_of_prescriptions DESC;
 
 -- QUERY 2: MEMBER AGE GROUP ANALYSIS
+-- fixed as-of date used here to keep the portfolio results stable
 SELECT
     CASE
-        WHEN TIMESTAMPDIFF(YEAR, m.member_birth_date, CURDATE()) >= 65 THEN 'age 65+'
+        WHEN TIMESTAMPDIFF(YEAR, m.member_birth_date, '2026-04-05') >= 65 THEN 'age 65+'
         ELSE '< 65'
     END AS age_group,
     COUNT(f.fill_id) AS total_prescriptions,
@@ -122,6 +123,7 @@ ORDER BY
     age_group;
 
 -- QUERY 3: MOST RECENT PRESCRIPTION FILL ANALYSIS
+-- this query uses a CTE and ROW_NUMBER(), so it assumes MySQL 8+
 WITH RankedFills AS (
     SELECT
         f.member_id,

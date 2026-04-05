@@ -1,14 +1,16 @@
 Variable Name,Variable Description,Variable Format
-first_name,Patient's first name,VARCHAR(100)
-last_name,Patient's last name,VARCHAR(100)
-birth_date,Patient's date of birth,DATE
-gender,Patient's gender,CHAR(1)
+member_id,Member unique identifier from the PBM,INT
+member_first_name,Member's first name,VARCHAR(100)
+member_last_name,Member's last name,VARCHAR(100)
+member_birth_date,Member's date of birth,DATE
+member_age,Member age shown in the original sample file,INT
+member_gender,Member's gender,CHAR(1)
 drug_ndc,National Drug Code - unique drug identifier for all drugs approved by the FDA,INT
 drug_name,Drug name,VARCHAR(100)
 drug_form_code,"Code for drug administration (tablet, topical cream, capsule, etc)",CHAR(2)
 drug_form_desc,"Name of drug administration (tablet, topical cream, capsule, etc)",VARCHAR(100)
-drug_brand_generic_code,Indicates if the drug prescribed was a brand name (1) or generic equivalent (2),INT
-drug_brand_generic_desc,Indicates if the drug prescribed was a brand name or generic equivalent,VARCHAR(10)
+drug_brand_generic_code,Indicates if the drug prescribed was generic (1) or brand name (2),INT
+drug_brand_generic_desc,Indicates if the drug prescribed was generic or brand name,VARCHAR(10)
 fill_date1,Earliest date when the member filled that medication at the pharmacy,DATE
 fill_date2,Second date when the member filled that medication at the pharmacy,DATE
 fill_date3,Third and most recent date when the member filled that medication at the pharmacy,DATE

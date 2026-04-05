@@ -2,6 +2,8 @@
 
 This folder contains the main SQL file for the project.
 
+The script assumes **MySQL 8+** because the final reporting section uses a CTE and `ROW_NUMBER()`.
+
 ## Main File
 
 - [`pharmacy_claims_star_schema_queries.sql`](pharmacy_claims_star_schema_queries.sql)
@@ -15,6 +17,8 @@ The SQL file includes:
 - foreign key setup
 - sample inserts
 - reporting queries
+
+The workflow is reproducible from the files in this repo, but it is set up as a manual SQL project rather than a one-click automated build.
 
 ## Main Tables
 
@@ -49,6 +53,8 @@ The project ends with three business-facing SQL queries.
 ![Query 1 Output](../outputs/figures/01-sql-query-1-prescription-count-by-drug.png)
 
 ### Query 2 - Member age group analysis
+
+This query uses a fixed as-of date in the SQL file so the age-group results stay aligned with the documented portfolio outputs.
 
 ![Query 2 Output](../outputs/figures/02-sql-query-2-member-age-group-analysis.png)
 

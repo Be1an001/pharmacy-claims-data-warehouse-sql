@@ -1,6 +1,6 @@
-# pharmacy-claims-data-warehouse-sql
+# Pharmacy Claims Data Warehouse SQL Project
 
-SQL final project for ALY6030: Data Warehousing & SQL. In this project, I turned a small pharmacy claims sample into a simple star schema, set up primary and foreign keys in MySQL, created an ERD, and wrote reporting queries for business users.
+SQL final project for ALY6030: Data Warehousing & SQL. In this project, I turned a small pharmacy claims sample into a simple star schema, set up primary and foreign keys in MySQL 8+, created an ERD, and wrote reporting queries for business users.
 
 ## Project Summary
 
@@ -9,6 +9,7 @@ This was my final SQL project for **ALY6030: Data Warehousing & SQL** in **Sprin
 The original raw file was a small pharmacy claims sample with repeated member and fill information in one wide table. My goal was to reorganize it into a cleaner warehouse structure, build the database logic in MySQL, and prepare example SQL reports that business users could use later when larger production data becomes available.
 
 This repo is my public portfolio version. I kept the project simple and readable, but I also kept the real project files so the work still feels traceable.
+The workflow can be reproduced manually from the files in this repo, but it is not packaged as a one-click automated build.
 
 ## Quick Links
 
@@ -50,7 +51,7 @@ The task was to clean that structure, build a usable star schema, and prepare sa
 | Main topic | SQL, normalization, star schema, ERD, reporting |
 | Raw data size | 5 rows x 21 columns |
 | Processed fact table | 11 prescription fill rows |
-| Main tools | MySQL, SQL, CSV, spreadsheet cleanup |
+| Main tools | MySQL 8+, SQL, CSV, spreadsheet cleanup |
 | Final deliverables | SQL file, ERD, report, portfolio PDF |
 
 ## Repository Contents
@@ -124,10 +125,11 @@ Source inside this repo:
 - [`archive/final-project-instructions.pdf`](archive/final-project-instructions.pdf)
 
 This sample uses made-up members for classroom use and is included here so the project can be reviewed and reproduced in the same form as my original work.
+The raw sample file is kept in its original course form, and the description file explains the raw columns without changing that source artifact.
 
 ## Resume-Friendly One-Line Summary
 
-Built a small pharmacy claims data warehouse prototype in MySQL by normalizing raw data into fact and dimension tables, designing PK/FK relationships, creating an ERD, and writing business reporting SQL queries.
+Built a small pharmacy claims data warehouse prototype in MySQL 8+ by normalizing raw data into fact and dimension tables, designing PK/FK relationships, creating an ERD, and writing business reporting SQL queries.
 
 ## Short Portfolio Intro
 

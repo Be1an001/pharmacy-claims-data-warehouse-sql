@@ -23,6 +23,7 @@ The original file is a small wide-format pharmacy claims sample.
 
 ### Raw input
 - file: [`raw/final_project_data.csv`](raw/final_project_data.csv)
+- field note: [`raw/final_project_data_description.csv`](raw/final_project_data_description.csv)
 - size: **5 rows x 21 columns**
 - includes member fields, drug fields, and repeated fill columns such as:
   - `fill_date1`, `fill_date2`, `fill_date3`
@@ -30,6 +31,7 @@ The original file is a small wide-format pharmacy claims sample.
   - `insurancepaid1`, `insurancepaid2`, `insurancepaid3`
 
 That structure was okay as a sample input, but not a good reporting structure for a relational warehouse.
+I kept the raw sample file in its original course form and used the description file to document the raw columns as they appear in that source artifact.
 
 ## Why I Split the Data
 
